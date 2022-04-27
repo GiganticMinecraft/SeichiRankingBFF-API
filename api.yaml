@@ -36,14 +36,14 @@ components:
     time_range:
       name: time_range
       in: query
-      description: TODO
+      description: ランキングの集計を行う期間を指定する文字列
       schema:
         $ref: "#/components/schemas/AggregationTimeRange"
 
     ranking_type:
       name: type
       in: query
-      description: TODO
+      description: ランキングの集計に使う統計情報を指定する文字列
       schema:
         $ref: "#/components/schemas/AggregationParameterType"
 
