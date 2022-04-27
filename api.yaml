@@ -19,6 +19,12 @@ paths:
       responses:
         "200":
           description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/UserData"
 
   /player-ranks/{uuid}:
     get:
@@ -30,6 +36,7 @@ paths:
       responses:
         "200":
           description: Successful response
+          # TODO:
 
 components:
   parameters:
@@ -96,3 +103,18 @@ components:
         - build
         - play_ticks
         - vote_count
+
+    UserData:
+      type: object
+      properties:
+        uuid:
+          type: string
+          format: uuid
+        name:
+          type: string
+        value:
+          type: integer
+          format: int64
+        last_login:
+          type: string
+          format: date-time
