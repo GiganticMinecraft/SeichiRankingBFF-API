@@ -104,7 +104,7 @@ components:
         - play_ticks
         - vote_count
 
-    UserData:
+    PlayerRankingRecord:
       type: object
       properties:
         rank_position:
