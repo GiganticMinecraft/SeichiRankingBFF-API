@@ -107,6 +107,10 @@ components:
     UserData:
       type: object
       properties:
+        rank_position:
+          type: integer
+          format: int32
+          minimum: 1
         uuid:
           type: string
           format: uuid
