@@ -116,11 +116,9 @@ components:
           type: string
           format: date-time
 
-    PlayerRankingRecord:
+    RankingRecord:
       type: object
       properties:
-        player:
-          $ref: "#/components/schemas/Player"
         rank_position:
           type: integer
           format: int32
@@ -132,3 +130,11 @@ components:
             破壊量や建築量など、どの統計値であるかはリクエストによって異なる。
             統計値の種類については "#/components/schemas/AggregationParameterType" を参照されたい。
           format: int64
+
+    PlayerRankingRecord:
+      type: object
+      properties:
+        player:
+          $ref: "#/components/schemas/Player"
+        record:
+          $ref: "#/components/schemas/RankingRecord"
