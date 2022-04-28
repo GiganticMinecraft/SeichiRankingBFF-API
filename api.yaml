@@ -127,4 +127,8 @@ components:
           minimum: 1
         value:
           type: integer
+          description: |
+            プレーヤーの統計値。
+            破壊量や建築量など、どの統計値であるかはリクエストによって異なる。
+            統計値の種類については "#/components/schemas/AggregationParameterType" を参照されたい。
           format: int64
