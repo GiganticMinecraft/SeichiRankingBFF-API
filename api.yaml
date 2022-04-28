@@ -24,7 +24,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/UserData"
+                  $ref: "#/components/schemas/PlayerRankingRecord"
 
   /player-ranks/{uuid}:
     get:
