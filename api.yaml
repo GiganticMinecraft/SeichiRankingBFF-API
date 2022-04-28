@@ -104,21 +104,27 @@ components:
         - play_ticks
         - vote_count
 
-    PlayerRankingRecord:
+    Player:
       type: object
       properties:
-        rank_position:
-          type: integer
-          format: int32
-          minimum: 1
         uuid:
           type: string
           format: uuid
         name:
           type: string
-        value:
-          type: integer
-          format: int64
         last_login:
           type: string
           format: date-time
+
+    PlayerRankingRecord:
+      type: object
+      properties:
+        player:
+          $ref: "#/components/schemas/Player"
+        rank_position:
+          type: integer
+          format: int32
+          minimum: 1
+        value:
+          type: integer
+          format: int64
