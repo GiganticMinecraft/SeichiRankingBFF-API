@@ -36,7 +36,10 @@ paths:
       responses:
         "200":
           description: Successful response
-          # TODO:
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RankingRecord"
 
 components:
   parameters:
