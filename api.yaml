@@ -115,7 +115,7 @@ components:
           format: uuid
         name:
           type: string
-        last_login:
+        last_quit:
           type: string
           format: date-time
 
