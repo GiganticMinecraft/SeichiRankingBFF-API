@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
   version: 1.0.0
-  title: SeichiRankingBFF API
-  description: SeichiRankingBFFが提供する、ランキング取得に関するAPI。
+  title: seichi-ranking-bff API
+  description: seichi-ranking-bff が提供する、ランキング取得に関するAPI。
 
 servers:
   - url: https://bff.ranking.seichi.click
